@@ -1,5 +1,5 @@
 {
-    "name": "socialiteproviders/tiktok",
+    "name": "nhantamz/tiktok-socialite",
     "description": "TikTok (tiktok.com) OAuth2 Provider for Laravel Socialite",
     "keywords": [
         "laravel",
