@@ -1,7 +1,7 @@
 # TikTok
 
 ```bash
-composer require socialiteproviders/tiktok
+composer require nhantamz/tiktok-socialite
 ```
 
 ## Installation & Basic Usage
