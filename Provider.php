@@ -87,6 +87,19 @@ class Provider extends AbstractProvider
             'grant_type'    => 'authorization_code',
         ];
     }
+    
+    /**
+     * Get the access token response for the given code.
+     *
+     * @param  string  $code
+     * @return array
+     */
+    public function getAccessTokenResponse($code)
+    {
+        $response = $this->getHttpClient()->post($this->getTokenUrl() . '?' . http_build_query($this->getTokenFields($code)));
+
+        return json_decode($response->getBody(), true);
+    }
 
     /**
      * Get TikTok user by token.
